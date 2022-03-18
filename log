@@ -79,3 +79,16 @@ list.c:37:8: error: ‘List’ {aka ‘struct List’} has no member named ‘pr
       |        ^~
 Compilation failed
 8679352
+Fri 18 Mar 2022 02:32:04 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:36:8: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   36 |   lista->next = NULL;
+      |        ^~
+list.c:37:8: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+   37 |   lista->prev = NULL;
+      |        ^~
+Compilation failed
+b627111

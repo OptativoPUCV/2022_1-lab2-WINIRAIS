@@ -33,7 +33,7 @@ List * createList() {
   
   
   lista->head = NULL;
-  lista->nex = NULL;
+  lista->next = NULL;
   lista->prev = NULL;
   
   return lista;
