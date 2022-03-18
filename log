@@ -110,3 +110,20 @@ Fri 18 Mar 2022 02:49:47 PM UTC:
  tests:  1|5
 total_score: 10/70
 2926c05
+Fri 18 Mar 2022 02:53:11 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:53: error: expected statement before ‘)’ token
+   50 |   if((list->current != NULL) && (list->head !=NULL))){
+      |                                                     ^
+list.c:50:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   50 |   if((list->current != NULL) && (list->head !=NULL))){
+      |   ^~
+list.c:50:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   50 |   if((list->current != NULL) && (list->head !=NULL))){
+      |                                                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+1707894
