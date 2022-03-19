@@ -74,8 +74,11 @@ void pushFront(List *list, void *data) {
   Node *nodo = createNode(data);
   if (list->head != NULL) {
     list->head->prev = nodo;
+  }else{
+    list->tail = nodo;
   }
   list->head = nodo;
+  
 }
 
 void pushBack(List *list, void *data) {
